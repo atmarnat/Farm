@@ -28,6 +28,10 @@ Animals.cs
 	All classes should extend the Animal class
 
 
+AnimalTest.cs
+	Added some tests to make sure the animal classes worked correctly
+	Implemented to test understanding of testing
+
 
 
 ### NOTE
