@@ -26,3 +26,9 @@ Animals.cs
 		- public class Sheep(): class to handle Sheep info
 		- public class Other(): class to handle Custom info
 	All classes should extend the Animal class
+
+
+
+
+### NOTE
+	I could have used the Animal class to do everything and greatly simplified the code. However, the goal of the project was to create 4 classes of animals and test some methods in them. Therefore I went this route.
