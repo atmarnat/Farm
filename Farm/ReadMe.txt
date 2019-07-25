@@ -11,6 +11,7 @@ DoStuff.cs
 		- private static Horse AddPig(): Adds a pig to the pig list
 		- private static Horse AddChicken(): Adds a chicken to the chicken list
 		- private static Horse AddSheep(): Adds a sheep to the sheep list
+		- private static void Populate(): Adds some initial animals to the lists
 
 FarmObjects.cs
 	Contains a list of objects that are found on a farm
@@ -25,14 +26,3 @@ Animals.cs
 		- public class Sheep(): class to handle Sheep info
 		- public class Other(): class to handle Custom info
 	All classes should extend the Animal class
-
-HOW TO GITHUB from VS
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.

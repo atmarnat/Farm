@@ -15,11 +15,11 @@ namespace DoStuff
         private static List<Other> OtherList = new List<Other>();
         public static void Stuff()
         {
+            Populate();
             bool exit = false;
             while (exit == false)
             {
                 string input = "";
-				
 				Console.WriteLine("Press Enter to Continue");
 				Console.ReadKey();
 				Console.Clear();
@@ -210,6 +210,22 @@ namespace DoStuff
             temp.SetColor(Console.ReadLine());
 
             return temp;
+        }
+        private static void Populate()
+        {
+            HorseList.Add(new Horse()); HorseList[0].SetName("Alpha"); HorseList[0].SetColor("Red");
+            HorseList.Add(new Horse()); HorseList[1].SetName("Bravo"); HorseList[1].SetColor("Black");
+            HorseList.Add(new Horse()); HorseList[2].SetName("Charlie"); HorseList[2].SetColor("White");
+            HorseList.Add(new Horse()); HorseList[3].SetName("Delta"); HorseList[3].SetColor("Chestnut");
+
+            ChickenList.Add(new Chicken()); ChickenList[0].SetName("001");
+            ChickenList.Add(new Chicken()); ChickenList[1].SetName("002");
+            ChickenList.Add(new Chicken()); ChickenList[2].SetName("003");
+            ChickenList.Add(new Chicken()); ChickenList[3].SetName("004");
+            ChickenList.Add(new Chicken()); ChickenList[4].SetName("005");
+            ChickenList.Add(new Chicken()); ChickenList[5].SetName("006");
+
+            SheepList.Add(new Sheep()); SheepList[0].SetName("Baah Baah"); SheepList[0].SetColor("Black");
         }
     }
 }

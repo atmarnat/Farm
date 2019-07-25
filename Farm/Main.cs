@@ -9,7 +9,7 @@ namespace Farm
     {
         static void Main(string[] args)
         {
-            DrawFarm.Welcome();
+                DrawFarm.Welcome();
             try
             {
                 Do.Stuff();
