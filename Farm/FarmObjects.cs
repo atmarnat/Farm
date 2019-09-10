@@ -6,6 +6,23 @@ namespace FarmObjects
 {
     public class Animal
     {
+        public string Type { get; set; }
+        public string Name { get; set; }
+        public string Sound { get; set; }
+        public string Food { get; set; }
+        public string Color { get; set; }
+        public int Legs { get; set; }
+
+        public void SetDefaultVals(string animal, string name, string sound, int legs, string food, string color)
+        {
+            this.Type = animal;
+            this.Name = name;
+            this.Sound = sound;
+            this.Food = food;
+            this.Color = color;
+            this.Legs = legs;
+        }
+        /*
         private string animal;
                 string name;
                 string sound;
@@ -34,13 +51,14 @@ namespace FarmObjects
         public string GetFood() => food;
         public void SetColor(string c) => color = c;
         public string GetColor() => color;
+        */
         public void About()
         {
-            Console.WriteLine($"Hello, my name is {name}. I am a {animal}. I have {legs} legs, eat {food}, and am {color}.");
+            Console.WriteLine($"Hello, my name is {Name}. I am a {Type}. I have {Legs} legs, eat {Food}, and am {Color}.");
         }
         public string GetAbout()
         {
-            return $"Hello, my name is {name}. I am a {animal}. I have {legs} legs, eat {food}, and am {color}.";
+            return $"Hello, my name is {Name}. I am a {Type}. I have {Legs} legs, eat {Food}, and am {Color}.";
         }
     }
     public static class DrawFarm

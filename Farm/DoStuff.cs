@@ -95,7 +95,7 @@ namespace DoStuff
                             input = Console.ReadLine();
                             for (int i = 0; i < HorseList.Count; i++)
                             {
-                                if (input == HorseList[i].GetName()) HorseList.RemoveAt(i);
+                                if (input == HorseList[i].Name) HorseList.RemoveAt(i);
                                 else if (i == HorseList.Count - 1) Console.WriteLine("This horse does not exist");
                             }
                         }
@@ -109,7 +109,7 @@ namespace DoStuff
                             input = Console.ReadLine();
                             for (int i = 0; i < PigList.Count; i++)
                             {
-                                if (input == PigList[i].GetName()) PigList.RemoveAt(i);
+                                if (input == PigList[i].Name) PigList.RemoveAt(i);
                                 else if (i == PigList.Count - 1) Console.WriteLine("This pig does not exist");
                             }
                         }
@@ -123,7 +123,7 @@ namespace DoStuff
                             input = Console.ReadLine();
                             for (int i = 0; i < ChickenList.Count; i++)
                             {
-                                if (input == ChickenList[i].GetName()) ChickenList.RemoveAt(i);
+                                if (input == ChickenList[i].Name) ChickenList.RemoveAt(i);
                                 else if (i == ChickenList.Count - 1) Console.WriteLine("This chicken does not exist");
                             }
                         }
@@ -137,7 +137,7 @@ namespace DoStuff
                             input = Console.ReadLine();
                             for (int i = 0; i < SheepList.Count; i++)
                             {
-                                if (input == SheepList[i].GetName()) SheepList.RemoveAt(i);
+                                if (input == SheepList[i].Name) SheepList.RemoveAt(i);
                                 else if (i == SheepList.Count - 1) Console.WriteLine($"This sheep does not exist");
                             }
                         }
@@ -172,9 +172,9 @@ namespace DoStuff
             Horse temp = new Horse();
 
             Console.Write("Enter the name: ");
-            temp.SetName(Console.ReadLine());
+            temp.Name =Console.ReadLine();
             Console.Write("What color is it: ");
-            temp.SetColor(Console.ReadLine());
+            temp.Color = Console.ReadLine();
 
             return temp;
         }
@@ -183,9 +183,9 @@ namespace DoStuff
             Pig temp = new Pig();
 
             Console.Write("Enter the name: ");
-            temp.SetName(Console.ReadLine());
+            temp.Name = Console.ReadLine();
             Console.Write("What color is it: ");
-            temp.SetColor(Console.ReadLine());
+            temp.Color = Console.ReadLine();
 
             return temp;
         }
@@ -194,9 +194,9 @@ namespace DoStuff
             Chicken temp = new Chicken();
 
             Console.Write("Enter the name: ");
-            temp.SetName(Console.ReadLine());
+            temp.Name = Console.ReadLine();
             Console.Write("What color is it: ");
-            temp.SetColor(Console.ReadLine());
+            temp.Color = Console.ReadLine();
 
             return temp;
         }
@@ -205,27 +205,27 @@ namespace DoStuff
             Sheep temp = new Sheep();
 
             Console.Write("Enter the name: ");
-            temp.SetName(Console.ReadLine());
+            temp.Name = Console.ReadLine();
             Console.Write("What color is it: ");
-            temp.SetColor(Console.ReadLine());
+            temp.Color = Console.ReadLine();
 
             return temp;
         }
         private static void Populate()
         {
-            HorseList.Add(new Horse()); HorseList[0].SetName("Alpha"); HorseList[0].SetColor("Red");
-            HorseList.Add(new Horse()); HorseList[1].SetName("Bravo"); HorseList[1].SetColor("Black");
-            HorseList.Add(new Horse()); HorseList[2].SetName("Charlie"); HorseList[2].SetColor("White");
-            HorseList.Add(new Horse()); HorseList[3].SetName("Delta"); HorseList[3].SetColor("Chestnut");
+            HorseList.Add(new Horse()); HorseList[0].Name = "Alpha"; HorseList[0].Color = "Red";
+            HorseList.Add(new Horse()); HorseList[1].Name = "Bravo"; HorseList[1].Color = "Black";
+            HorseList.Add(new Horse()); HorseList[2].Name = "Charlie"; HorseList[2].Color = "White";
+            HorseList.Add(new Horse()); HorseList[3].Name = "Delta"; HorseList[3].Color = "Chestnut";
 
-            ChickenList.Add(new Chicken()); ChickenList[0].SetName("001");
-            ChickenList.Add(new Chicken()); ChickenList[1].SetName("002");
-            ChickenList.Add(new Chicken()); ChickenList[2].SetName("003");
-            ChickenList.Add(new Chicken()); ChickenList[3].SetName("004");
-            ChickenList.Add(new Chicken()); ChickenList[4].SetName("005");
-            ChickenList.Add(new Chicken()); ChickenList[5].SetName("006");
+            ChickenList.Add(new Chicken()); ChickenList[0].Name = "001";
+            ChickenList.Add(new Chicken()); ChickenList[1].Name = "002";
+            ChickenList.Add(new Chicken()); ChickenList[2].Name = "003";
+            ChickenList.Add(new Chicken()); ChickenList[3].Name = "004";
+            ChickenList.Add(new Chicken()); ChickenList[4].Name = "005";
+            ChickenList.Add(new Chicken()); ChickenList[5].Name = "006";
 
-            SheepList.Add(new Sheep()); SheepList[0].SetName("Baah Baah"); SheepList[0].SetColor("Black");
+            SheepList.Add(new Sheep()); SheepList[0].Name = "Baah Baah"; SheepList[0].Color = "Black";
         }
     }
 }
